@@ -1,0 +1,26 @@
+{
+  "name": "school-rpg",
+  "version": "1.0.0",
+  "private": true,
+  "description": "RPG-персонажи и пошаговые поединки",
+  "main": "rpg.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "rpg.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "lines": 70
+      }
+    }
+  }
+}
